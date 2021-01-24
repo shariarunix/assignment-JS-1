@@ -1,3 +1,5 @@
+// https://github.com/shariarunix/assignment-JS-1
+
 // Kilometer To Meter
 
 function kilometerToMeter(KM) {
@@ -42,10 +44,13 @@ function hotelCost(spendingDays) {
 // Mega Friend
 
 function megafriend(friendsName) {
-    var largestName = 0;
-    for(var i = 0; i <= friendsName.length; i++) {
-        if(friendsName[i].length > largestName) {
-            largestName = friendsName[i].length;
+    var largestName = '';
+    var Name = friendsName[0].length;
+    console.log(Name);
+    for(var i = 0; i < friendsName.length; i++) {
+        var elementName = friendsName[i];
+        if(elementName.length > Name) {
+            largestName = elementName;
         }
     }
     return largestName;
